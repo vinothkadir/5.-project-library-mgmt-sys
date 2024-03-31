@@ -30,5 +30,20 @@ Created a functional Library Management System that facilitates easy book borrow
 Future Enhancements:
 Implement additional features such as book reservation, fine calculation for late returns, and user authentication for enhanced security.
 
+Time Complexity:
+
+Searching for Books/Users:
+Searching for books or users involves iterating through the respective vectors, resulting in a time complexity of O(N) or O(M), where N is the number of books and M is the number of users.
+
+Borrowing/Returning Books:
+Borrowing and returning books also require searching for books and users, resulting in a time complexity of O(N * M), where N is the number of books and M is the number of users.
+
+Space Complexity:
+Books and Users:
+The space complexity for storing information about books and users is O(N + M), where N is the number of books and M is the number of users.
+
+Borrowed Books:
+Storing borrowed books as references in the User class adds O(M * K) space complexity, where M is the number of users and K is the average number of books borrowed by each user.
+
 
 
